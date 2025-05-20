@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariola Apartments</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="/calendar/style.css" />
+    <link rel="stylesheet" href="/our apartments/syle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="/logo.png">
+                </a>
+            </div>
+            <div class="main-menu">
+                <ul>
+                    <li class="dropdown">
+                        <a href="/index.html">Apartmentele Noastre</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/our apartments/deluxe.html">Mariola Deluxe</a></li>
+                            <li><a href="studio.html">Mariola Studio</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="mariolap" id="studio1">
+        <div class="container">
+
+            <!-- Apartment Description -->
+            <div class="apartment-text-description">
+                <h1 class="text-xl">
+                    Mariola Studio 1
+                </h1>
+                <p class="text-sm">
+                    Apartamentul Mariola Studio 1 dispune de trei dormitoare matrimoniale, 
+                    fiecare cu baie proprie, o bucatarie foarte spatioasa si doua terase 
+                    de unde se poate admira atat privelistea asupra lacului, cat si a marii. <br>
+                    <br>
+                    Sunt disponibile trei locuri de parcare privata, iar apartmanetul este situat
+                    langa satul de vacanta, la intrarea in Mamaia.
+                </p>
+
+                <iframe
+                    class="studio-maps"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2859.6849667145057!2d28.62150787685621!3d44.213554371080946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40baf06cde5b3749%3A0x74ed607c0b4ef871!2sStrada%20Dispensarului%2014%2C%20Constan%C8%9Ba%20900001%2C%20Ruman%C3%ADa!5e0!3m2!1ses!2ses!4v1744801721412!5m2!1ses!2ses" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+
+            <!-- Photo Gallery -->
+            <div class="image-gallery">
+                <div class="preview-image">
+                    <img id="main-image-1" src="/images/Studio 1/01.jpg" alt="Preview Image" onclick="openOverlay(this.src)">
+                </div>
+                <div class="thumbnails-container" id="studio1-thumbnails">
+                    <button class="scroll-left" onclick="scrollGallery('studio1-thumbnails', 'left')">&lt;</button>
+                    <div class="thumbnails">
+                        <img src="/images/Studio 1/01.jpg" class="thumbnail" onclick="changeImage('/images/Studio 1/01.jpg', 'main-image-1')">
+                        <img src="/images/Studio 1/02.jpg" class="thumbnail" onclick="changeImage('/images/Studio 1/02.jpg', 'main-image-1')">
+                        <img src="/images/Studio 1/03.jpg" class="thumbnail" onclick="changeImage('/images/Studio 1/03.jpg', 'main-image-1')">
+                        <img src="/images/Studio 1/04.jpg" class="thumbnail" onclick="changeImage('/images/Studio 1/04.jpg', 'main-image-1')">
+                        <img src="/images/Studio 1/05.jpg" class="thumbnail" onclick="changeImage('/images/Studio 1/05.jpg', 'main-image-1')">
+                        <img src="/images/Studio 1/06.jpg" class="thumbnail" onclick="changeImage('/images/Studio 1/06.jpg', 'main-image-1')">
+                        <img src="/images/Studio 1/07.jpg" class="thumbnail" onclick="changeImage('/images/Studio 1/07.jpg', 'main-image-1')">
+                        <img src="/images/Studio 1/08.jpg" class="thumbnail" onclick="changeImage('/images/Studio 1/08.jpg', 'main-image-1')">
+                        <img src="/images/Studio 1/09.jpg" class="thumbnail" onclick="changeImage('/images/Studio 1/09.jpg', 'main-image-1')">
+                        <img src="/images/Bloc Garsoniere/01.jpg" class="thumbnail" onclick="changeImage('/images/Bloc Garsoniere/01.jpg', 'main-image-1')">
+                        <img src="/images/Bloc Garsoniere/02.jpg" class="thumbnail" onclick="changeImage('/images/Bloc Garsoniere/02.jpg', 'main-image-1')">
+                        <img src="/images/Bloc Garsoniere/03.jpg" class="thumbnail" onclick="changeImage('/images/Bloc Garsoniere/03.jpg', 'main-image-1')">
+                        <img src="/images/Bloc Garsoniere/04.jpg" class="thumbnail" onclick="changeImage('/images/Bloc Garsoniere/04.jpg', 'main-image-1')">
+                    </div>
+                    <button class="scroll-right" onclick="scrollGallery('studio1-thumbnails', 'right')">&gt;</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="calendar-contact">
+            <my-calendar apartment="studio1"></my-calendar> 
+        </div>   
+    </section>
+
+
+    <section class="mariolap" id="studio3">
+        <div class="container">
+
+            <!-- Apartment Description -->
+            <div class="apartment-text-description">
+                <h1 class="text-xl">
+                    Mariola Studio 3
+                </h1>
+                <p class="text-sm">
+                    Apartamentul Mariola Studio 2 dispune de trei dormitoare matrimoniale, 
+                    fiecare cu baie proprie, o bucatarie foarte spatioasa si o terasa 
+                    de unde se poate admira atat privelistea asupra lacului, cat si a marii. <br>
+                    <br>
+                    Sunt disponibile doua locuri de parcare privata, iar apartmanetul este situat
+                    langa satul de vacanta, la intrarea in Mamaia.
+                </p>
+
+                <iframe
+                    class="studio-maps"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2859.566736985872!2d28.623866476856463!3d44.215989071081104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40baf06c31a1be01%3A0xcfe5ce741c2ba2cd!2zQWxlZWEgVW5pdmVyc2l0xIPIm2lpIDIsIENvbnN0YW7Im2EgOTAwMDAxLCBSdW1hbsOtYQ!5e0!3m2!1ses!2ses!4v1744808182925!5m2!1ses!2ses"  
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+
+            <!-- Photo Gallery -->
+            <div class="image-gallery">
+                <div class="preview-image">
+                    <img id="main-image-2" src="/images/Studio 3/01.jpg" alt="Preview Image" onclick="openOverlay(this.src)">
+                </div>
+                <div class="thumbnails-container" id="studio3-thumbnails">
+                    <button class="scroll-left" onclick="scrollGallery('studio3-thumbnails', 'left')">&lt;</button>
+                    <div class="thumbnails">
+                        <img src="/images/Studio 3/01.jpg" class="thumbnail" onclick="changeImage('/images/Studio 3/01.jpg', 'main-image-2')">
+                        <img src="/images/Studio 3/02.jpg" class="thumbnail" onclick="changeImage('/images/Studio 3/02.jpg', 'main-image-2')">
+                        <img src="/images/Studio 3/03.jpg" class="thumbnail" onclick="changeImage('/images/Studio 3/03.jpg', 'main-image-2')">
+                        <img src="/images/Studio 3/04.jpg" class="thumbnail" onclick="changeImage('/images/Studio 3/04.jpg', 'main-image-2')">
+                        <img src="/images/Studio 3/05.jpg" class="thumbnail" onclick="changeImage('/images/Studio 3/05.jpg', 'main-image-2')">
+                        <img src="/images/Studio 3/06.jpg" class="thumbnail" onclick="changeImage('/images/Studio 3/06.jpg', 'main-image-2')">
+                        <img src="/images/Studio 3/07.jpg" class="thumbnail" onclick="changeImage('/images/Studio 3/07.jpg', 'main-image-2')">
+                        <img src="/images/Studio 3/08.jpg" class="thumbnail" onclick="changeImage('/images/Studio 3/08.jpg', 'main-image-2')">
+                        <img src="/images/Studio 3/09.jpg" class="thumbnail" onclick="changeImage('/images/Studio 3/09.jpg', 'main-image-2')">
+                        <img src="/images/Studio 3/10.jpg" class="thumbnail" onclick="changeImage('/images/Studio 3/10.jpg', 'main-image-2')">
+                        <img src="/images/Studio 3/11.jpg" class="thumbnail" onclick="changeImage('/images/Studio 3/11.jpg', 'main-image-2')">
+                        <img src="/images/Bloc Garsoniere/01.jpg" class="thumbnail" onclick="changeImage('/images/Bloc Garsoniere/01.jpg', 'main-image-2')">
+                        <img src="/images/Bloc Garsoniere/02.jpg" class="thumbnail" onclick="changeImage('/images/Bloc Garsoniere/02.jpg', 'main-image-2')">
+                        <img src="/images/Bloc Garsoniere/03.jpg" class="thumbnail" onclick="changeImage('/images/Bloc Garsoniere/03.jpg', 'main-image-2')">
+                        <img src="/images/Bloc Garsoniere/04.jpg" class="thumbnail" onclick="changeImage('/images/Bloc Garsoniere/04.jpg', 'main-image-2')">
+                    </div>
+                    <button class="scroll-right" onclick="scrollGallery('studio3-thumbnails', 'right')">&gt;</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="calendar-contact">
+            <my-calendar apartment="studio3"></my-calendar> 
+        </div>
+    </section>
+
+    <section class="mariolap" id="studio4">
+        <div class="container">
+
+            <!-- Apartment Description -->
+            <div class="apartment-text-description">
+                <h1 class="text-xl">
+                    Mariola Studio 4
+                </h1>
+                <p class="text-sm">
+                    Apartamentul Mariola Studio 2 dispune de trei dormitoare matrimoniale, 
+                    fiecare cu baie proprie, o bucatarie foarte spatioasa si o terasa 
+                    de unde se poate admira atat privelistea asupra lacului, cat si a marii. <br>
+                    <br>
+                    Sunt disponibile doua locuri de parcare privata, iar apartmanetul este situat
+                    langa satul de vacanta, la intrarea in Mamaia.
+                </p>
+
+                <iframe
+                    class="studio-maps"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2859.566736985872!2d28.623866476856463!3d44.215989071081104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40baf06c31a1be01%3A0xcfe5ce741c2ba2cd!2zQWxlZWEgVW5pdmVyc2l0xIPIm2lpIDIsIENvbnN0YW7Im2EgOTAwMDAxLCBSdW1hbsOtYQ!5e0!3m2!1ses!2ses!4v1744808182925!5m2!1ses!2ses"  
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+
+            <!-- Photo Gallery -->
+            <div class="image-gallery">
+                <div class="preview-image">
+                    <img id="main-image-3" src="/images/Studio 4/01.jpg" alt="Preview Image" onclick="openOverlay(this.src)">
+                </div>
+                <div class="thumbnails-container" id="studio4-thumbnails">
+                    <button class="scroll-left" onclick="scrollGallery('studio4-thumbnails', 'left')">&lt;</button>
+                    <div class="thumbnails">
+                        <img src="/images/Studio 4/01.jpg" class="thumbnail" onclick="changeImage('/images/Studio 4/01.jpg', 'main-image-3')">
+                        <img src="/images/Studio 4/02.jpg" class="thumbnail" onclick="changeImage('/images/Studio 4/02.jpg', 'main-image-3')">
+                        <img src="/images/Studio 4/03.jpg" class="thumbnail" onclick="changeImage('/images/Studio 4/03.jpg', 'main-image-3')">
+                        <img src="/images/Studio 4/04.jpg" class="thumbnail" onclick="changeImage('/images/Studio 4/04.jpg', 'main-image-3')">
+                        <img src="/images/Studio 4/05.jpg" class="thumbnail" onclick="changeImage('/images/Studio 4/05.jpg', 'main-image-3')">
+                        <img src="/images/Studio 4/06.jpg" class="thumbnail" onclick="changeImage('/images/Studio 4/06.jpg', 'main-image-3')">
+                        <img src="/images/Studio 4/07.jpg" class="thumbnail" onclick="changeImage('/images/Studio 4/07.jpg', 'main-image-3')">
+                        <img src="/images/Studio 4/08.jpg" class="thumbnail" onclick="changeImage('/images/Studio 4/08.jpg', 'main-image-3')">
+                        <img src="/images/Studio 4/09.jpg" class="thumbnail" onclick="changeImage('/images/Studio 4/09.jpg', 'main-image-3')">
+                        <img src="/images/Studio 4/10.jpg" class="thumbnail" onclick="changeImage('/images/Studio 4/10.jpg', 'main-image-3')">
+                        <img src="/images/Bloc Garsoniere/01.jpg" class="thumbnail" onclick="changeImage('/images/Bloc Garsoniere/01.jpg', 'main-image-3')">
+                        <img src="/images/Bloc Garsoniere/02.jpg" class="thumbnail" onclick="changeImage('/images/Bloc Garsoniere/02.jpg', 'main-image-3')">
+                        <img src="/images/Bloc Garsoniere/03.jpg" class="thumbnail" onclick="changeImage('/images/Bloc Garsoniere/03.jpg', 'main-image-3')">
+                        <img src="/images/Bloc Garsoniere/04.jpg" class="thumbnail" onclick="changeImage('/images/Bloc Garsoniere/04.jpg', 'main-image-3')">
+                    </div>
+                    <button class="scroll-right" onclick="scrollGallery('studio4-thumbnails', 'right')">&gt;</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="calendar-contact">
+            <my-calendar apartment="studio4"></my-calendar> 
+        </div>
+    </section>
+
+
+    <section class="mariolap" id="studio5">
+        <div class="container">
+
+            <!-- Apartment Description -->
+            <div class="apartment-text-description">
+                <h1 class="text-xl">
+                    Mariola Studio 5
+                </h1>
+                <p class="text-sm">
+                    Apartamentul Mariola Studio 5 dispune de trei dormitoare matrimoniale, 
+                    fiecare cu baie proprie, o bucatarie foarte spatioasa si o terasa 
+                    de unde se poate admira atat privelistea asupra lacului, cat si a marii. <br>
+                    <br>
+                    Sunt disponibile doua locuri de parcare privata, iar apartmanetul este situat
+                    langa satul de vacanta, la intrarea in Mamaia.
+                </p>
+
+                <iframe
+                    class="studio-maps"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2859.566736985872!2d28.623866476856463!3d44.215989071081104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40baf06c31a1be01%3A0xcfe5ce741c2ba2cd!2zQWxlZWEgVW5pdmVyc2l0xIPIm2lpIDIsIENvbnN0YW7Im2EgOTAwMDAxLCBSdW1hbsOtYQ!5e0!3m2!1ses!2ses!4v1744808182925!5m2!1ses!2ses"  
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+
+            <!-- Photo Gallery -->
+            <div class="image-gallery">
+                <div class="preview-image">
+                    <img id="main-image-4" src="/images/Studio 5/01.jpg" alt="Preview Image" onclick="openOverlay(this.src)">
+                </div>
+                <div class="thumbnails-container" id="studio5-thumbnails">
+                    <button class="scroll-left" onclick="scrollGallery('studio5-thumbnails', 'left')">&lt;</button>
+                    <div class="thumbnails">
+                        <img src="/images/Studio 5/01.jpg" class="thumbnail" onclick="changeImage('/images/Studio 5/01.jpg', 'main-image-4')">
+                        <img src="/images/Studio 5/02.jpg" class="thumbnail" onclick="changeImage('/images/Studio 5/02.jpg', 'main-image-4')">
+                        <img src="/images/Studio 5/03.jpg" class="thumbnail" onclick="changeImage('/images/Studio 5/03.jpg', 'main-image-4')">
+                        <img src="/images/Studio 5/04.jpg" class="thumbnail" onclick="changeImage('/images/Studio 5/04.jpg', 'main-image-4')">
+                        <img src="/images/Studio 5/05.jpg" class="thumbnail" onclick="changeImage('/images/Studio 5/05.jpg', 'main-image-4')">
+                        <img src="/images/Studio 5/06.jpg" class="thumbnail" onclick="changeImage('/images/Studio 5/06.jpg', 'main-image-4')">
+                        <img src="/images/Studio 5/07.jpg" class="thumbnail" onclick="changeImage('/images/Studio 5/07.jpg', 'main-image-4')">
+                        <img src="/images/Studio 5/08.jpg" class="thumbnail" onclick="changeImage('/images/Studio 5/08.jpg', 'main-image-4')">
+                        <img src="/images/Studio 5/09.jpg" class="thumbnail" onclick="changeImage('/images/Studio 5/09.jpg', 'main-image-4')">
+                        <img src="/images/Studio 5/10.jpg" class="thumbnail" onclick="changeImage('/images/Studio 5/10.jpg', 'main-image-4')">
+                        <img src="/images/Bloc Garsoniere/01.jpg" class="thumbnail" onclick="changeImage('/images/Bloc Garsoniere/01.jpg', 'main-image-4')">
+                        <img src="/images/Bloc Garsoniere/02.jpg" class="thumbnail" onclick="changeImage('/images/Bloc Garsoniere/02.jpg', 'main-image-4')">
+                        <img src="/images/Bloc Garsoniere/03.jpg" class="thumbnail" onclick="changeImage('/images/Bloc Garsoniere/03.jpg', 'main-image-4')">
+                        <img src="/images/Bloc Garsoniere/04.jpg" class="thumbnail" onclick="changeImage('/images/Bloc Garsoniere/04.jpg', 'main-image-4')">
+                    </div>
+                    <button class="scroll-right" onclick="scrollGallery('studio5-thumbnails', 'right')">&gt;</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="calendar-contact">
+            <my-calendar apartment="studio4"></my-calendar> 
+        </div>
+    </section>
+
+
+    <!-- Overlay -->
+
+    <div id="overlay" class="overlay" onclick="closeOverlay()">
+        <div class="overlay-content">
+            <img id="overlay-image" src="/images/Studio 3/01.jpg" alt="Enlarged Image">
+        </div>
+    </div>
+
+   
+
+    <script src="../script.js"></script>
+    <script src="/our apartments/script.js"></script>
+    <script src="/calendar/calendar.js"></script>
+    <script src="/calendar/script.js" defer></script>
+    
+

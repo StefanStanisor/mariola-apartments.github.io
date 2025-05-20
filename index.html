@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariola Apartments</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png">
+                </a>
+            </div>
+            <div class="main-menu">
+                <ul>
+                    <li class="dropdown">
+                        <a href="index.html">Apartmentele Noastre</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/our apartments/deluxe.html">Mariola Deluxe</a></li>
+                            <li><a href="/our apartments/studio.html">Mariola Studio</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="apartment-selection">
+        <div class="container">
+            <div class="apartment-preview" id="deluxe-preview" onclick="redirectToDetailPage('deluxe')">
+                <h1 class="text-md">Mariola Deluxe</h1>
+                <img src="/images/Deluxe 1/01.jpg" alt="Mariola Deluxe">
+                <p class="multiline text-sm">   ~ 6 persoane
+                                                ~ 700 lei / noapte
+                                                3 dormitoare matrimoniale
+                                                3 bai
+                                                1 bucatarie
+                </p>
+            </div>
+
+            <div class="apartment-preview" id="studio-preview" onclick="redirectToDetailPage('studio')">
+                <h1 class="text-md">Mariola Studio</h1>
+                <img src="/images/Studio 3/01.jpg" alt="Mariola Studio">
+                <p class="multiline text-sm">   ~ 2 persoane
+                                                ~ 300 lei / noapte
+                                                1 dormitor matrimonial
+                                                1 baie
+                                                1 bucatarie
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

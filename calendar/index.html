@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSH Apartments</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/calendar/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+
+    <div class="calendar-reservation">
+        <div class="container">
+            <div class="calendar-container">
+
+                <!-- Calendar -->
+                <div class="calendar">
+                    <div class="calendar-nav">
+                        <button class="btn" onclick="changeMonth(-1)">&lt;</button>
+                        <div class="month-year" id="monthYear1"></div>
+                    </div>
+                    <div class="week-days">
+                    <div class="week-day text-sm">Du</div>
+                    <div class="week-day text-sm">Lu</div>
+                    <div class="week-day text-sm">Ma</div>
+                    <div class="week-day text-sm">Mi</div>
+                    <div class="week-day text-sm">Jo</div>
+                    <div class="week-day text-sm">Vi</div>
+                    <div class="week-day text-sm">Sa</div>
+                    </div>
+                    <div class="calendar-days" id="calendarDays1"></div>
+                </div>
+    
+                <div class="calendar">
+                    <div class="calendar-nav">
+                        <div class="month-year" id="monthYear2"></div>
+                        <button class="btn" onclick="changeMonth(1)">&gt;</button>
+                    </div>
+                    <div class="week-days">
+                        <div class="week-day text-sm">Du</div>
+                        <div class="week-day text-sm">Lu</div>
+                        <div class="week-day text-sm">Ma</div>
+                        <div class="week-day text-sm">Mi</div>
+                        <div class="week-day text-sm">Jo</div>
+                        <div class="week-day text-sm">Vi</div>
+                        <div class="week-day text-sm">Sa</div>
+                    </div>
+                    <div class="calendar-days" id="calendarDays2"></div>
+                </div>
+            </div>
+
+            <!-- Reservation -->
+            <div class="reservation">
+                <p class="text-md">
+                    Recomandarile noastre de rezervare.
+                </p>
+                <a href="https://www.airbnb.com/rooms/43694210?guests=1&adults=1&s=67&unique_share_id=8e9f75c2-311b-4bce-8e39-29123cc02248" 
+                class="airbnb btn text-md"
+                target="_blank">
+                    <i class="fa-brands fa-airbnb"></i>
+                    Airbnb
+                </a>
+                <p class="text-md">
+                    sau
+                </p>
+                <a href="#" class="phone btn text-md">
+                    <i class="fa-solid fa-phone"></i>
+                    Suna
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
