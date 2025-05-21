@@ -2,12 +2,24 @@ class Calendar extends HTMLElement {
     connectedCallback(){
         const apartment = this.getAttribute("apartment");
 
-        if (apartment === "mariola1") {
+        if (apartment === "deluxe1") {
             this.apartment_link = "https://www.airbnb.com/rooms/43694210?guests=1&adults=1&s=67&unique_share_id=4204ac16-06c1-4938-9b3d-87c96024f200";
-            this.apartment_ical = "/calendars/calendar_m1.ics";
-        } else if (apartment === "mariola2") {
+            this.apartment_ical = "/calendars/deluxe1.ics";
+        } else if (apartment === "deluxe2") {
             this.apartment_link = "https://www.airbnb.com/rooms/49754956?guests=1&adults=1&s=67&unique_share_id=32642ac9-dea5-469d-a7b2-0ab3febe3447";
-            this.apartment_ical = "/calendars/calendar_m2.ics";
+            this.apartment_ical = "/calendars/deluxe2.ics";
+        } else if (apartment === "studio1") {
+            this.apartment_link = "https://www.airbnb.com.au/rooms/1420306070215664353?guests=1&adults=1&s=67&unique_share_id=9d32849a-104e-4406-9f72-c23349758e01";
+            this.apartment_ical = "/calendars/studio1.ics";
+        } else if (apartment === "studio3") {
+            this.apartment_link = "https://www.airbnb.com.au/rooms/1420315211053944492?guests=1&adults=1&s=67&unique_share_id=6bc52999-d696-451c-a902-74effdfcd456";
+            this.apartment_ical = "/calendars/studio3.ics";
+        } else if (apartment === "studio4") {
+            this.apartment_link = "https://www.airbnb.com.au/rooms/1420344414722070152?guests=1&adults=1&s=67&unique_share_id=2e61e9f7-6920-4cee-98ae-bdfce177573b";
+            this.apartment_ical = "/calendars/studio4.ics";
+        } else if (apartment === "studio5") {
+            this.apartment_link = "https://www.airbnb.com.au/rooms/1420891060677687453?guests=1&adults=1&s=67&unique_share_id=820ce739-e1f1-49f4-96ce-5eb7f4b35eff";
+            this.apartment_ical = "/calendars/studio5.ics";
         }
 
         this.innerHTML =`
