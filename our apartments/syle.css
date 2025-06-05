@@ -51,7 +51,7 @@
 
 .thumbnails {
     display: flex;
-    overflow-x: auto;
+    overflow-x: scroll;
     scroll-behavior: smooth;
     margin-top: 10px;
     padding: 5px 0;
@@ -66,8 +66,8 @@
 }
 
 .scroll-left, .scroll-right {
-    padding: 0.5rem 0.5rem;
-    font-size: 1.2rem;
+    padding: 0.2rem 0.2rem;
+    font-size: 1rem;
     background-color: #fff;
     cursor: pointer;
     border: none;
@@ -158,6 +158,42 @@
 .studio-maps {
     margin-top: auto;
     width: 100%;
+}
+
+/* Media Queries */
+
+@media (max-width: 670px) {
+    .mariolap >.container {
+        flex-direction: column;    
+    }
+
+    .apartment-text-description {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .image-gallery {
+        width: 100%;
+    }
+
+    .thumbnail {
+        width: 50px;
+        height: 50px;
+    }
+
+    .thumbnails {
+        padding: auto;
+    }
+
+    .thumbnail {
+        margin: 0 5px;
+    }
+
+    .preview-image img {
+        width: 100%;
+        height: auto;
+      }
+
 }
 
 

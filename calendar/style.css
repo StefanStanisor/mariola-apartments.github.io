@@ -117,3 +117,28 @@
 .phone.btn {
     color: blue;
 }
+
+/* Mobile Queries */
+
+@media (max-width: 670px) {
+
+  .calendar-reservation .container{
+    flex-direction: column;
+  }
+  .calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    padding: 0.2rem;
+    font-size: 0.6rem;
+  }
+
+.calendar-days div {
+    padding: 0.4rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+}
+

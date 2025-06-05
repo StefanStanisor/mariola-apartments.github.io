@@ -5,3 +5,13 @@ function redirectToDetailPage(apartmentType) {
         window.location.href = '/our apartments/studio.html';
     }
 }
+
+// Mobile Menu
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburgerButton = document.querySelector('.hamburger-button');
+    const mobileMenu = document.querySelector('.mobile-menu');
+  
+    hamburgerButton.addEventListener('click', () =>
+      mobileMenu.classList.toggle('active')
+    );
+  });
