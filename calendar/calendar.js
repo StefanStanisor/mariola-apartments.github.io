@@ -126,9 +126,12 @@ class Calendar extends HTMLElement {
       
     parseICalDate(dateStr) {
         if (dateStr.length === 8) {
-          return new Date(`${dateStr.slice(0, 4)}-${dateStr.slice(4, 6)}-${dateStr.slice(6, 8)}`);
+          const year = parseInt(dateStr.slice(0, 4));
+          const month = parseInt(dateStr.slice(4, 6)) - 1; // JS months are 0-based
+          const day = parseInt(dateStr.slice(6, 8));
+          return new Date(year, month, day); // Interpreted in local time
         }
-        return new Date(dateStr);
+        return new Date(dateStr); // Will handle full datetime strings like 20250620T140000Z
       }
 
 
